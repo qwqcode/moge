@@ -129,7 +129,8 @@ input {
 body > .wrap {
     display: flex;
     flex-direction: row;
-    max-width: 1024px;
+    max-width: 1044px;
+    padding: 0 20px;
     margin: 0 auto;
 }
 
