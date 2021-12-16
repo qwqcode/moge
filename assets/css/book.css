@@ -1,0 +1,295 @@
+.book-info {
+    
+}
+
+.book-name {
+    font-size: 26px;
+    color: #494949;
+}
+
+.book-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.book-info .cover {
+    width: 135px;
+}
+
+.book-info .cover img {
+    width: 100%;
+    height: auto;
+}
+
+.book-info .details {
+    flex: 1;
+    padding: 0 20px;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* Book Star */
+.book-info .star {
+    width: 200px;
+    border-left: 1px solid #eaeaea;
+    padding: 0 10px;
+    margin-right: 20px;
+}
+
+.book-info .star .title {
+    font-size: 12px;
+    padding: 0 10px;
+    color: #9b9b9b;
+}
+
+.book-info .star .score {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 10px 0;
+}
+
+.book-info .star .score .text {
+    color: #494949;
+    font-size: 28px;
+    padding: 0 10px;
+}
+
+.book-info .star .score .icon {
+    flex: 1;
+}
+
+.book-info .star .score .icon .icon-stars {
+    display: block;
+}
+
+.book-info .star .score .count {
+    display: inline-block;
+    font-size: 13px;
+    margin-top: 3px;
+}
+
+.book-info .star .desc {
+    font-size: 11px;
+}
+
+.book-info .star .desc .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #9b9b9b;
+}
+
+.book-info .star .desc .item .text {
+    padding: 0 10px;
+}
+
+.book-info .star .desc .item .bar {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.book-info .star .desc .item .bar > div {
+    display: inline-block;
+    margin-right: 5px;
+    background: #ffd596;
+    height: 11px;
+    width: 0%;
+}
+
+/* Book Action */
+.book-action {
+    margin: 20px 0;
+}
+
+.book-action .btn {
+    display: inline-block;
+    border: 1px solid #D6C2B2;
+    background: #FBEBDC;
+    color: #161615;
+    padding: 1px 12px;
+    border-radius: 2px;
+    font-size: 13px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.book-action .btn:hover {
+    background: #ffe3cc;
+}
+
+.book-action .btn:not(:last-child) {
+    margin-right: 2px;
+}
+
+/* Book Related */
+.book-related {
+    margin: 30px 0;
+}
+
+.book-related .title {
+    font-weight: normal;
+    font-size: 16px;
+    color: #007722;
+}
+
+.book-related .title::after {
+    content: " · · · · · ·";
+    margin-left: 10px;
+}
+
+.book-related .title:not(:first-child) {
+    margin-top: 30px;
+}
+
+.book-related .content {
+    font-size: 13px;
+    text-indent: 2em;
+    word-break: normal;
+    word-wrap: break-word;
+}
+
+.book-related .tags {}
+
+.book-related .tags > span {
+    display: inline-block;
+    font-size: 13px;
+    padding: 2px 11px;
+    margin: 0 3px 5px 0;
+    background-color: #f5f5f5;
+    color: #37A;
+}
+
+.book-related .book-comment {
+    font-size: 13px;
+}
+
+.book-related .book-comment .comment-item {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.book-related .book-comment .comment-item:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+
+.book-related .book-comment .comment-item .meta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.book-related .book-comment .comment-item .meta .user {
+    margin-right: 10px;
+}
+
+.book-related .book-comment .comment-item .meta .star {
+    margin-right: 5px;
+}
+
+.book-related .book-comment .comment-item .meta .date {
+    color: #aaa;
+}
+
+.book-related .book-comment .comment-item .comment-content {
+    color: #666;
+}
+
+/* Sidebar - Book Sale */
+.book-sale {
+    font-size: 13px;
+}
+
+.book-sale .sale-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.book-sale .sale-item:not(:last-child) {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.book-sale .sale-item > * {
+    flex: 1;
+}
+
+.book-sale .sale-item > *:hover {
+    background: transparent;
+}
+
+.book-sale .sale-item .name {
+    color: #37a;
+}
+
+.book-sale .sale-item .price {
+    color: #37a;
+}
+
+.book-sale .sale-item .buy {
+    color: #EB9108;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 7%);
+    background: #fff;
+    border-radius: 3px;
+    text-align: center;
+}
+
+/* Sidebar - Book versions */
+.book-versions .meta {
+    color: #666666;
+    margin-top: 5px;
+}
+
+/* Sidebar - Book readers */
+.book-readers {}
+
+.book-readers .reader-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.book-readers .reader-item:not(:last-child) {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #eaeaea;
+}
+
+.book-readers .reader-item .avatar img {
+    height: 48px;
+    width: 48px;
+}
+
+.book-readers .reader-item .avatar:hover {
+    background: transparent;
+}
+
+.book-readers .reader-item .info {
+    padding-left: 15px;
+}
+
+.book-readers .reader-item .info .name {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.book-readers .reader-item .info .stat {
+    color: #666666;
+}
+
+/* Sidebar - Book Grps */
+.book-grps {}
+
+.book-grps .grp-item {}
+
+.book-grps .grp-item:not(:last-child) {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #eaeaea;
+}
+
+.book-grps .grp-item > span {
+    color: #666666;
+}
