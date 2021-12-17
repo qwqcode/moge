@@ -60,5 +60,7 @@ function signup(evt) {
         return
     }
 
+    alert('然而并没有后端程序，不能注册...')
+
     // XMR 操作...
 }
