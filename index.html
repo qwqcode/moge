@@ -21,17 +21,20 @@
             </div>
             <div class="right">
                 <a href="#">下载客户端</a>
-                <a href="#">登陆/注册</a>
             </div>
         </div>
         <div class="header">
-            <div class="brand">
+            <a class="brand" href="/">
                 <div class="logo"></div>
                 <div class="logo-text"></div>
-            </div>
+            </a>
             <div class="search">
                 <input type="text" placeholder="书名、作者、ISBN">
                 <div class="icon"></div>
+            </div>
+            <div class="user">
+                <a href="./login.html" class="login-btn">登陆</a>
+                <a href="./signup.html" class="signup-btn">注册</a>
             </div>
         </div>
     </div>
@@ -44,7 +47,7 @@
             <!-- 新书速递 -->
             <div class="box">
                 <div class="box-header">
-                    <div class="title">新书速递</div>
+                    <div class="title">热门书籍</div>
                     <div class="links">
                         <a href="#" class="active">全部</a>
                         <a href="#">文学</a>
@@ -54,76 +57,24 @@
                         <a href="#">科学新知</a>
                     </div>
                 </div>
-                <div class="books-wrap box-body">
-                    <div class="book-item">
-                        <a class="cover" href="./book.html">
-                            <img src="./assets/img/books/谈判中的城市空间.jpg" alt="">
-                        </a>
-                        <a class="name" href="./book.html">谈判中的城市空间：城市化与晚明南京</a>
-                        <div class="author">费丝言</div>
-                    </div>
-                    <div class="book-item">
-                        <div class="cover">
-                            <img src="./assets/img/books/谈判中的城市空间.jpg" alt="">
+                <div class="box-body">
+                    <div class="new-books">
+                        <div class="book-item">
+                            <a class="cover" href="./book.html">
+                                <img src="./assets/img/books/谈判中的城市空间.jpg" alt="">
+                            </a>
+                            <a class="name" href="./book.html">谈判中的城市空间：城市化与晚明南京</a>
+                            <div class="author">费丝言</div>
                         </div>
-                        <a class="name" href="#">谈判中的城市空间：城市化与晚明南京</a>
-                        <div class="author">费丝言</div>
                     </div>
-                    <div class="book-item">
-                        <div class="cover">
-                            <img src="./assets/img/books/谈判中的城市空间.jpg" alt="">
-                        </div>
-                        <a class="name" href="#">谈判中的城市空间：城市化与晚明南京</a>
-                        <div class="author">费丝言</div>
-                    </div>
-                    <div class="book-item">
-                        <div class="cover">
-                            <img src="./assets/img/books/谈判中的城市空间.jpg" alt="">
-                        </div>
-                        <a class="name" href="#">谈判中的城市空间：城市化与晚明南京</a>
-                        <div class="author">费丝言</div>
-                    </div>
-                    <div class="book-item">
-                        <div class="cover">
-                            <img src="./assets/img/books/谈判中的城市空间.jpg" alt="">
-                        </div>
-                        <a class="name" href="#">谈判中的城市空间：城市化与晚明南京</a>
-                        <div class="author">费丝言</div>
-                    </div>
-                    <div class="book-item">
-                        <div class="cover">
-                            <img src="./assets/img/books/谈判中的城市空间.jpg" alt="">
-                        </div>
-                        <a class="name" href="#">谈判中的城市空间：城市化与晚明南京</a>
-                        <div class="author">费丝言</div>
-                    </div>
-                    <div class="book-item">
-                        <div class="cover">
-                            <img src="./assets/img/books/谈判中的城市空间.jpg" alt="">
-                        </div>
-                        <a class="name" href="#">谈判中的城市空间：城市化与晚明南京</a>
-                        <div class="author">费丝言</div>
-                    </div>
-                    <div class="book-item">
-                        <div class="cover">
-                            <img src="./assets/img/books/谈判中的城市空间.jpg" alt="">
-                        </div>
-                        <a class="name" href="#">谈判中的城市空间：城市化与晚明南京</a>
-                        <div class="author">费丝言</div>
-                    </div>
-                    <div class="book-item">
-                        <div class="cover">
-                            <img src="./assets/img/books/谈判中的城市空间.jpg" alt="">
-                        </div>
-                        <a class="name" href="#">谈判中的城市空间：城市化与晚明南京</a>
-                        <div class="author">费丝言</div>
-                    </div>
-                    <div class="book-item">
-                        <div class="cover">
-                            <img src="./assets/img/books/谈判中的城市空间.jpg" alt="">
-                        </div>
-                        <a class="name" href="#">谈判中的城市空间：城市化与晚明南京</a>
-                        <div class="author">费丝言</div>
+                    <div class="slide-pagination new-books-pagination">
+                        <span class="prev act-btn">‹</span>
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="next act-btn">›</span>
                     </div>
                 </div>
             </div>
@@ -149,11 +100,11 @@
                 </div>
                 <div class="box-body popular-books">
                     <div class="book-item">
-                        <div class="cover">
+                        <a class="cover" href="#">
                             <img src="./assets/img/popular-books/素食者.jpg" alt="">
-                        </div>
+                        </a>
                         <div class="info">
-                            <div class="name">素食者</div>
+                            <a class="name" href="#">素食者</a>
                             <div class="star">
                                 <div class="icon-stars stars-45"></div>
                                 <div class="score">8.1</div>
@@ -164,144 +115,39 @@
                             </div>
                         </div>
                     </div>
-                    <div class="book-item">
-                        <div class="cover">
-                            <img src="./assets/img/popular-books/素食者.jpg" alt="">
-                        </div>
-                        <div class="info">
-                            <div class="name">素食者</div>
-                            <div class="star">
-                                <div class="icon-stars stars-45"></div>
-                                <div class="score">8.1</div>
-                            </div>
-                            <div class="author">作者：[韩] 韩江</div>
-                            <div class="extras">
-                                <div class="badge">有电子书</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="book-item">
-                        <div class="cover">
-                            <img src="./assets/img/popular-books/素食者.jpg" alt="">
-                        </div>
-                        <div class="info">
-                            <div class="name">素食者</div>
-                            <div class="star">
-                                <div class="icon-stars stars-45"></div>
-                                <div class="score">8.1</div>
-                            </div>
-                            <div class="author">作者：[韩] 韩江</div>
-                            <div class="extras">
-                                <div class="badge">有电子书</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="book-item">
-                        <div class="cover">
-                            <img src="./assets/img/popular-books/素食者.jpg" alt="">
-                        </div>
-                        <div class="info">
-                            <div class="name">素食者</div>
-                            <div class="star">
-                                <div class="icon-stars stars-45"></div>
-                                <div class="score">8.1</div>
-                            </div>
-                            <div class="author">作者：[韩] 韩江</div>
-                            <div class="extras">
-                                <div class="badge">有电子书</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="book-item">
-                        <div class="cover">
-                            <img src="./assets/img/popular-books/素食者.jpg" alt="">
-                        </div>
-                        <div class="info">
-                            <div class="name">素食者</div>
-                            <div class="star">
-                                <div class="icon-stars stars-45"></div>
-                                <div class="score">8.1</div>
-                            </div>
-                            <div class="author">作者：[韩] 韩江</div>
-                            <div class="extras">
-                                <div class="badge">有电子书</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="book-item">
-                        <div class="cover">
-                            <img src="./assets/img/popular-books/素食者.jpg" alt="">
-                        </div>
-                        <div class="info">
-                            <div class="name">素食者</div>
-                            <div class="star">
-                                <div class="icon-stars stars-45"></div>
-                                <div class="score">8.1</div>
-                            </div>
-                            <div class="author">作者：[韩] 韩江</div>
-                            <div class="extras">
-                                <div class="badge">有电子书</div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
 
         <!-- 侧边栏 -->
         <div class="sidebar">
+            <div class="quick-link">
+                <a href="#"></a>
+            </div>
+
             <!-- 热门标签 -->
             <div class="box">
                 <div class="box-header">
                     <div class="title">热门标签</div>
                 </div>
-                <div class="box-body">
+                <div class="box-body book-tags">
                     <div class="tag-grp">
                         <div class="title">文学</div>
-                        <a href="#">小说</a>
-                        <a href="#">随笔</a>
-                        <a href="#">散文</a>
-                        <a href="#">诗歌</a>
-                        <a href="#">童话</a>
-                        <a href="#">名著</a>
-                        <a href="#">港台</a>
-                        <a href="#" class="more">更多»</a>
-                    </div>
-                    <div class="tag-grp">
-                        <div class="title">文学</div>
-                        <a href="#">小说</a>
-                        <a href="#">随笔</a>
-                        <a href="#">散文</a>
-                        <a href="#">诗歌</a>
-                        <a href="#">童话</a>
-                        <a href="#">名著</a>
-                        <a href="#">港台</a>
-                        <a href="#" class="more">更多»</a>
-                    </div>
-                    <div class="tag-grp">
-                        <div class="title">文学</div>
-                        <a href="#">小说</a>
-                        <a href="#">随笔</a>
-                        <a href="#">散文</a>
-                        <a href="#">诗歌</a>
-                        <a href="#">童话</a>
-                        <a href="#">名著</a>
-                        <a href="#">港台</a>
-                        <a href="#" class="more">更多»</a>
-                    </div>
-                    <div class="tag-grp">
-                        <div class="title">文学</div>
-                        <a href="#">小说</a>
-                        <a href="#">随笔</a>
-                        <a href="#">散文</a>
-                        <a href="#">诗歌</a>
-                        <a href="#">童话</a>
-                        <a href="#">名著</a>
-                        <a href="#">港台</a>
-                        <a href="#" class="more">更多»</a>
+                        <div class="tags">
+                            <a href="#">小说</a>
+                            <a href="#">随笔</a>
+                            <a href="#">散文</a>
+                            <a href="#">诗歌</a>
+                            <a href="#">童话</a>
+                            <a href="#">名著</a>
+                            <a href="#">港台</a>
+                            <a href="#" class="more">更多»</a>
+                        </div>
                     </div>
                 </div>
             </div>
+            
             <!-- 畅销图书榜 -->
             <div class="box">
                 <div class="box-header">
@@ -313,20 +159,6 @@
                         <div class="info">
                             <a class="name" href="#">蛤蟆先生去看心理医生</a>
                             <div class="author">[英] 罗伯特·戴博德</div>
-                        </div>
-                    </div>
-                    <div class="book-item">
-                        <div class="rank">2.</div>
-                        <div class="info">
-                            <a class="name" href="#">次第花开</a>
-                            <div class="author">希阿荣博堪布</div>
-                        </div>
-                    </div>
-                    <div class="book-item">
-                        <div class="rank">3.</div>
-                        <div class="info">
-                            <a class="name" href="#">人生海海</a>
-                            <div class="author">麦家</div>
                         </div>
                     </div>
                 </div>
@@ -341,8 +173,6 @@
                 </div>
             </div>
         </div>
-
-
     </div>
 
     <!-- Footer -->
@@ -360,5 +190,7 @@
             </div>
         </div>
     </div>
+
+    <script src="./assets/js/home.data.js"></script>
 </body>
 </html>

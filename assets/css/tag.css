@@ -1,0 +1,81 @@
+.tag-header {
+    border-bottom: 1px dashed #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.tag-header .title {
+    color: #494949;
+    font-size: 26px;
+    margin-bottom: 0;
+}
+
+.tag-books {}
+
+.tag-books .book-item {
+    display: flex;
+    flex-direction: row;
+    font-size: 13px;
+    padding: 0 10px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px dashed #ddd;
+}
+
+.tag-books .book-item .cover {
+    width: 90px;
+    height: 130px;
+    overflow: hidden;
+}
+
+.tag-books .book-item .cover img {
+    width: 100%;
+    height: auto;
+}
+
+.tag-books .book-item .info {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.tag-books .book-item .name {
+    font-size: 15px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.tag-books .book-item .meta {
+    margin-bottom: 10px;
+}
+
+.tag-books .book-item .star {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.tag-books .book-item .star .score {}
+
+.tag-books .book-item .star .count {
+    margin-left: 5px;
+    color: #e09015;
+    font-size: 12px;
+}
+
+.tag-books .book-item .desc {
+    line-height: 1.7;
+}
+
+/* Sidebar - Tags Related */
+.tags-related {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.tags-related a {
+    padding: 4px 10px;
+    margin-bottom: 4px;
+    margin-right: 4px;
+}

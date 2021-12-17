@@ -1,54 +1,79 @@
-/* Books Wrap */
-.books-wrap {
+/* New Books */
+.new-books {
     display: flex;
     flex-wrap: wrap;
 }
 
-.books-wrap .book-item {
+.new-books .book-item {
     width: 20%;
-    padding: 15px;
+    padding: 10px;
 }
 
-.books-wrap .book-item .cover img {
+.new-books .book-item .cover {
+    display: block;
+    width: 100%;
+    height: 155px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.new-books .book-item .cover img {
     width: 100%;
     height: auto;
 }
 
-.books-wrap .book-item .cover:hover {
+.new-books .book-item .cover:hover {
     background: transparent;
 }
 
-.books-wrap .book-item .name {
-    display: inline;
+.new-books .book-item .name {
+    display: block;
     font-size: 14px;
     margin-top: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.books-wrap .book-item .author {
+.new-books .book-item .author {
+    display: block;
     font-size: 13px;
     color: #333;
     margin-top: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* Tag Grp */
 .tag-grp {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px 0;
+    margin-top: 10px;
+    padding-bottom: 15px;
+}
+
+.tag-grp:not(:last-child) {
+    margin-bottom: 15px;
+    border-bottom: 1px dashed #ddd;
 }
 
 .tag-grp .title {
     width: 100%;
-    font-size: 16px;
+    font-size: 15px;
+    margin-left: 5px;
     display: block;
     margin-bottom: 10px;
+}
+
+.tag-grp .tags {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .tag-grp a {
     color: #37a;
     background-color: #F5F5F5;
-    font-size: 14px;
-    padding: 2px 7px;
+    font-size: 13px;
+    padding: 2px 10px;
     margin: 0 3px 5px 0;
 }
 
@@ -84,16 +109,16 @@
 }
 
 .top-books .book-item .info {
-    display: flex;
-    flex-direction: column;
 }
 
 .top-books .book-item .name {
-    display: inline-block;
+    display: inline;
+    margin-bottom: 5px;
 }
 
 .top-books .book-item .author {
-    display: inline-block;
+    margin-top: 10px;
+    display: block;
 }
 
 /* Book News */
@@ -136,6 +161,7 @@
 .popular-books .book-item .cover {
     width: 85px;
     height: 120px;
+    overflow: hidden;
 }
 
 .popular-books .book-item .cover img {
@@ -150,14 +176,14 @@
 
 .popular-books .book-item .name {
     font-size: 15px;
-    margin-bottom: 5px;
 }
 
 .popular-books .book-item .star {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .popular-books .book-item .star .score {
@@ -168,7 +194,7 @@
 
 .popular-books .book-item .author {
     font-size: 13px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .popular-books .book-item .extras {
