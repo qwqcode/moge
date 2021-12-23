@@ -5,8 +5,9 @@ function renderNewBooks() {
     
     $newBooks.innerHTML = ''
 
-    derangedArray(BOOKS).forEach((book) => {
+    rangeArray(derangedArray(BOOKS), 10).forEach((book) => {
         const $booItem = $tpl.cloneNode(true)
+        const $coverLink = $booItem.querySelector('.cover')
         const $coverImg = $booItem.querySelector('.cover img')
         const $name = $booItem.querySelector('.name')
         const $author = $booItem.querySelector('.author')
@@ -22,6 +23,10 @@ function renderNewBooks() {
         $author.innerText = book.author
         $author.title = book.author
         
+        // 链接
+        $name.href = './book.html?name='+encodeURIComponent(book.name)
+        $coverLink.href = './book.html?name='+encodeURIComponent(book.name)
+
         $newBooks.append($booItem)
     })
 }
@@ -66,10 +71,13 @@ renderNewBooks()
     $popularBooks.innerHTML = ''
     
     rangeArray(BOOKS, 8).forEach((book) => {
-        const $booItem = $tpl.cloneNode(true)
-        const $coverImg = $booItem.querySelector('.cover img')
-        const $name = $booItem.querySelector('.name')
-        const $author = $booItem.querySelector('.author')
+        const $bookItem = $tpl.cloneNode(true)
+        const $coverImg = $bookItem.querySelector('.cover img')
+        const $coverLink = $bookItem.querySelector('.cover')
+        const $name = $bookItem.querySelector('.name')
+        const $author = $bookItem.querySelector('.author')
+        const $starText = $bookItem.querySelector('.info .star .score')
+        const $starIcon = $bookItem.querySelector('.info .star .icon-stars')
 
         // 图片
         $coverImg.src = './assets/img/books/'+encodeURIComponent(book.name)+'.jpg'
@@ -79,8 +87,16 @@ renderNewBooks()
 
         // 作者
         $author.innerText = book.author
-        
-        $popularBooks.append($booItem)
+
+        // 评分
+        $starText.innerText = book.score
+        $starIcon.classList.add(`stars-${book.star}`)
+
+        // 链接
+        $name.href = `./book.html?name=${encodeURIComponent(book.name)}`
+        $coverLink.href = `./book.html?name=${encodeURIComponent(book.name)}`
+
+        $popularBooks.append($bookItem)
     })
 })()
 
@@ -101,11 +117,11 @@ renderNewBooks()
         $tags.innerHTML = ''
         tags.forEach((t) => {
             const $a = document.createElement('a')
-            $a.href = '#'
+            $a.href = './tag.html?name='+decodeURIComponent(t)
             $a.innerText = t
             $tags.append($a)
         })
-        $tags.innerHTML += '<a href="#" class="more">更多»</a>'
+        $tags.innerHTML += '<a href="./tag.html?name=更多" class="more">更多»</a>'
 
         $bookTags.append($tagGrp)
     })
@@ -127,6 +143,8 @@ renderNewBooks()
         $rank.innerText = `${index+1}.`
         $name.innerText = book.name
         $author.innerText = book.author
+
+        $name.href = `./book.html?name=${encodeURIComponent(book.name)}`
 
         $topBooks.append($bookItem)
     })

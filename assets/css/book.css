@@ -146,6 +146,7 @@
 .book-related .content {
     font-size: 13px;
     text-indent: 2em;
+    line-height: 1.5;
     word-break: normal;
     word-wrap: break-word;
 }

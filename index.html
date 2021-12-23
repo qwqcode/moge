@@ -5,16 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>墨鸽读书</title>
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
     <link rel="stylesheet" href="./assets/css/home.css">
-    <script src="./assets/js/main.js"></script>
+    <script>if (!!window.ActiveXObject || "ActiveXObject" in window) { alert('浏览器过时，请升级浏览器'); };</script>
+    <script src="./assets/js/data.js"></script>
+    <script src="./assets/js/common.js"></script>
 </head>
 <body>
     <!-- Navbar -->
     <div class="navbar">
         <div class="line">
             <div class="left">
-                <a href="#">读书</a>
+                <a href="./">读书</a>
                 <a href="#">电影</a>
                 <a href="#">音乐</a>
                 <a href="#">FM</a>
@@ -49,12 +51,12 @@
                 <div class="box-header">
                     <div class="title">热门书籍</div>
                     <div class="links">
-                        <a href="#" class="active">全部</a>
-                        <a href="#">文学</a>
-                        <a href="#">小说</a>
-                        <a href="#">历史文化</a>
-                        <a href="#">社会纪实</a>
-                        <a href="#">科学新知</a>
+                        <a class="active">全部</a>
+                        <a href="./tag.html?name=文学">文学</a>
+                        <a href="./tag.html?name=小说">小说</a>
+                        <a href="./tag.html?name=历史文化">历史文化</a>
+                        <a href="./tag.html?name=社会纪实">社会纪实</a>
+                        <a href="./tag.html?name=科学新知">科学新知</a>
                     </div>
                 </div>
                 <div class="box-body">
@@ -101,12 +103,12 @@
                 <div class="box-body popular-books">
                     <div class="book-item">
                         <a class="cover" href="#">
-                            <img src="./assets/img/popular-books/素食者.jpg" alt="">
+                            <img src="./assets/img/books/谈判中的城市空间.jpg" alt="">
                         </a>
                         <div class="info">
-                            <a class="name" href="#">素食者</a>
+                            <a class="name" href="#">谈判中的城市空间</a>
                             <div class="star">
-                                <div class="icon-stars stars-45"></div>
+                                <div class="icon-stars"></div>
                                 <div class="score">8.1</div>
                             </div>
                             <div class="author">作者：[韩] 韩江</div>
@@ -179,14 +181,13 @@
     <div class="wrap">
         <div class="footer">
             <div class="copyright">
-                © 2005－2021 example.com, all rights reserved 杭州科技有限公司
+                © 2005－2021 example.com, all rights reserved 杭州XX科技有限公司
             </div>
             <div class="links">
                 <a href="./about.html">关于我们</a>
-                <a href="#">联系我们</a>
-                <a href="#">法律声明</a>
-                <a href="#">帮助中心</a>
-                <a href="#">图书馆合作</a>
+                <a href="./law.html">法律声明</a>
+                <a href="./help.html">帮助中心</a>
+                <a href="./co.html">图书馆合作</a>
             </div>
         </div>
     </div>

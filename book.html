@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>墨鸽读书</title>
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
     <link rel="stylesheet" href="./assets/css/book.css">
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/data.js"></script>
+    <script src="./assets/js/common.js"></script>
 </head>
 <body>
     <!-- Navbar -->
     <div class="navbar">
         <div class="line">
             <div class="left">
-                <a href="#">读书</a>
+                <a href="./">读书</a>
                 <a href="#">电影</a>
                 <a href="#">音乐</a>
                 <a href="#">FM</a>
@@ -45,21 +46,20 @@
 
         <div class="main main-pd">
             <div>
-                <h1 class="book-name">谈判中的城市空间</h1>
+                <h1 class="book-name"></h1>
                 <div class="book-info">
                     <div class="cover">
-                        <img src="./assets/img/books/谈判中的城市空间.jpg" alt="">
+                        <img src="" alt="">
                     </div>
                     <div class="details">
-                        作者: 费丝言<br>
-                        出版社: 浙江大学出版社<br>
-                        出品方: 启真馆<br>
-                        副标题: 城市化与晚明南京<br>
+                        作者: <span data-bind="author"></span><br>
+                        出版社: <span data-bind="press"></span><br>
+                        出品方: 未知<br>
+                        副标题: <span data-bind="name"></span><br>
                         原作名: Negotiating Urban Space: Urbanization and Late Ming Nanjing<br>
-                        译者: 王兴亮<br>
-                        出版年: 2021-12<br>
+                        出版年: <span data-bind="pressYear"></span><br>
                         页数: 381<br>
-                        定价: 89.00元<br>
+                        定价: <span data-bind="price"></span><br>
                         装帧: 平装<br>
                         ISBN: 9787308216302<br>
                     </div>
@@ -68,7 +68,7 @@
                         <div class="score">
                             <div class="text">9.2</div>
                             <div class="icon">
-                                <div class="icon-stars stars-45"></div>
+                                <div class="icon-stars"></div>
                                 <a class="count" href="#">21人评价</a>
                             </div>
                         </div>
@@ -298,16 +298,17 @@
     <div class="wrap">
         <div class="footer">
             <div class="copyright">
-                © 2005－2021 example.com, all rights reserved 杭州科技有限公司
+                © 2005－2021 example.com, all rights reserved 杭州XX科技有限公司
             </div>
             <div class="links">
                 <a href="./about.html">关于我们</a>
-                <a href="#">联系我们</a>
-                <a href="#">法律声明</a>
-                <a href="#">帮助中心</a>
-                <a href="#">图书馆合作</a>
+                <a href="./law.html">法律声明</a>
+                <a href="./help.html">帮助中心</a>
+                <a href="./co.html">图书馆合作</a>
             </div>
         </div>
     </div>
+
+    <script src="./assets/js/book.data.js"></script>
 </body>
 </html>
